@@ -10,10 +10,35 @@
 
 <body>
 
-    <div id="board"></div>
-    <div id="result" class="clearfix"></div>
+    <table id="tablero">
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td colspan="3"><span id="turno"></span></td>
+            </tr>
+            <tr>
+                <td class="celdasTablero" data-ren=0 data-col=0 onclick="manejarClick(event)"></td>
+                <td class="celdasTablero" data-ren=0 data-col=1 onclick="manejarClick(event)"></td>
+                <td class="celdasTablero" data-ren=0 data-col=2 onclick="manejarClick(event)"></td>
+            </tr>
+            <tr>
+                <td class="celdasTablero" data-ren=1 data-col=0 onclick="manejarClick(event)"></td>
+                <td class="celdasTablero" data-ren=1 data-col=1 onclick="manejarClick(event)"></td>
+                <td class="celdasTablero" data-ren=1 data-col=2 onclick="manejarClick(event)"></td>
+            </tr>
+            <tr>
+                <td class="celdasTablero" data-ren=2 data-col=0 onclick="manejarClick(event)"></td>
+                <td class="celdasTablero" data-ren=2 data-col=1 onclick="manejarClick(event)"></td>
+                <td class="celdasTablero" data-ren=2 data-col=2 onclick="manejarClick(event)"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><span id="mensaje"></span></td>
+            </tr>
+        </tbody>
+    </table>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
